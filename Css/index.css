@@ -68,11 +68,32 @@ body{
     border-radius: 10px;
 
 }
-.navbar a:hover{
+/****hover over navbar****/
+.nav-links a:hover{
 	color: cyan;
 	
 
 }
+.nav-links a::after{
+    position:absolute; 
+    content: '';
+    position: absolute;
+    width: 100%;
+
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #07f9d0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
 
 .logo h1{
     color: #fff;
@@ -94,40 +115,76 @@ nav img{
 }
 /*hero*/
 .hero-container{
-    padding-left: 10rem;
+
     display: flex;
     align-items: center;
+	justify-content: center;
+	padding: 5rem 0;
     
 
     
 
 }
 .Description-text{
-    margin-top: 40px;
-    width: 500px;
-    height: 500px;
+    
+    width: 100%;
+
     display:flex;
+	align-items: center;
+
     justify-content: center;
-    
-    flex-direction: column;
-}
-.Description-text h1{
-    color: var(--text-color);
-    font-size: 25px;
+	flex-direction: column;
+	padding: 5rem 0;
     
     
 }
+
 .Description-text span{
-    font-size: 100px;
-    color: rgb(183, 224, 224);
+	position: relative;
+    font-size: 4rem;
+    color: transparent;
     font-weight: bolder;
+	-webkit-text-stroke: 0.1px rgb(21, 22, 22);
+	text-transform: uppercase;
 
 }
+.Description-text h1{
+	color: var(--text-color);
+}
+.Description-text h1 span::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	-webkit-text-stroke: 0.1px  rgb(13, 17, 17) ;
+	
+	overflow: hidden;
+	animation: animate 4s linear infinite;
+	color: rgb(7, 249, 249);
+
+
+}
+.Description-text h2{
+	color: var(--text-color);
+
+}
+@keyframes animate{
+	0%,10%,100%{
+       width: 0;
+	}
+	70%,90%{
+		width: 100%;
+	}
+
+}
+
 /*the buttons*/
 .container {
 	width: 50%;
 	display: flex;
-	margin-top: 30px;
+	margin-top: 4rem;
 	justify-content: space-around;
 	
 }
@@ -425,7 +482,7 @@ width: auto;
 	justify-content: space-around;
 	margin: 50px;
 	padding: 30px;
-	border:1px solid beige;
+	
 	
 }
 .services-details{
@@ -478,10 +535,7 @@ width: auto;
 
 }
 
-.contact-details img{
-	width: 50px;
-	
-}
+
 .contact-details{
 	
 	padding: 20px;
@@ -499,6 +553,80 @@ width: auto;
 	font-size: 15px;
 
 }
+.social-container{
+	border-top: #fff solid 1px;
+	
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+  
+	
+	 
+	padding: 1rem 3rem; 
+  
+  }
+  
+	
+	
+	
+	
+	
+  
+  
+  
+	
+	
+	
+  
+  .row h4{
+	color: #7645d8;
+	text-align: center;
+  
+  }
+  .row p{
+	color: #fff;
+  
+  }
+  .text-container{
+	color: #fff;
+	display: flex;
+	gap: 1rem;
+	
+  }
+  
+  
+  .text-container p{
+	margin-top: 7px;
+  
+  }
+  
+  .text-container h2{
+	font-weight: bolder;
+  }
+  .text-container p span{
+	border-radius: 50%;
+	padding: 2px 6px;
+	border: 1px solid #fff;
+  }
+  .social-link-container{
+	display: flex;
+	
+
+	
+  }
+  .social-link-container img{
+	width: 1.8rem;
+	margin-left:1rem ;
+	color: #fff;
+	
+  }
+  
+
+  
+  
+  
+  
+  
 
 
 
