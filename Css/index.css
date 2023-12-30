@@ -29,7 +29,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-	padding: 0 2rem;
+	padding: 1rem 2rem;
     
     
 
@@ -40,14 +40,19 @@ body{
 
 .nav-links ul{
     display: flex;
-    margin: 0;
-    padding: 0;
+    
+    
+	gap: 4rem;
 
 }
 .nav-links li a{
-    padding: 2rem;
+    
     display: block;
-    color: #fff;;
+    color: #fff;
+	position: relative;
+	padding-bottom:0.2rem;
+	font-weight: bold;
+	
 }
 
 .toggle-button{
@@ -79,6 +84,7 @@ body{
     content: '';
     position: absolute;
     width: 100%;
+	
 
     transform: scaleX(0);
     height: 2px;
@@ -135,6 +141,7 @@ nav img{
     justify-content: center;
 	flex-direction: column;
 	padding: 5rem 0;
+	margin: 0 10px ;
     
     
 }
@@ -336,6 +343,10 @@ nav img{
 .element-infos p{
 	text-align: center;
 }
+.About-details{
+	margin-top: 2rem;
+	width: 60%;
+}
 
 
 
@@ -474,21 +485,23 @@ width: auto;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
+	border: 1px solid #fff;
 }
 
 /*Services sections*/
 .services-container{
 	display: flex;
 	justify-content: space-around;
-	margin: 50px;
-	padding: 30px;
+
+	padding: 5rem ;
+	border: 1px solid #fff;
 	
 	
 }
 .services-details{
-	width: 350px;
-	height: 350px;
-	border: 0,3px solid rgb(39, 39, 35);
+	width: 300px;
+	height: 300px;
+	border: 0.3px solid rgb(39, 39, 35);
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
@@ -496,7 +509,7 @@ width: auto;
 	justify-content: center;
 	gap: 2rem;
 	background: #151516;
-	box-shadow: 5px 10px 20px #282a38 ;
+	box-shadow: 5px 10px 20px #535672 ;
 }
 .service-image{
 	width: 100px;
@@ -512,12 +525,15 @@ width: auto;
 }
 .services-text{
 	text-align: center;
+
 }
 .services-text h3{
 	color: cyan;
+	margin-bottom:1rem ;
 }
 .services-text  p{
 	color:var(--text-color);
+	margin:  0 1rem;
 }
 
 /*contact section*/
@@ -566,18 +582,7 @@ width: auto;
   
   }
   
-	
-	
-	
-	
-	
-  
-  
-  
-	
-	
-	
-  
+
   .row h4{
 	color: #7645d8;
 	text-align: center;

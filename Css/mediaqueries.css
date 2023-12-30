@@ -61,18 +61,40 @@
     .Description-text{
         border: #fff 1px solid
     }
-    .Description-text h1{
-        text-align: center;
-        font-size: 1.2rem;  
+    .Description-text h2{
+        
+        font-size: 0.8rem;  
         
         
     }
+
+    .container .btn{
+        width: 120px;
+        height: 50px;
+        border-radius: 20px;
+    
+        
+    }
+    .container .btn a{
+    font-size: 0.7rem;
+
+    }
+    
+    .Description-text h1{
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
    .Description-text span{
-    font-size: 1.5rem;
+    font-size: 1rem;
    } 
    .container{
     border: #fff 1px solid;
-    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    
 
     
    }
@@ -138,6 +160,17 @@
     gap: 2rem;
     
     padding: 2rem ;
+}
+.services-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding:  1rem 0;
+    min-width: 100%;
+}
+.sevices-details{
+    width: 50px;
+    height:50px ;
 }
 
 
